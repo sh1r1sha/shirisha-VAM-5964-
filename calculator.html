@@ -1,0 +1,65 @@
+<html>
+ 
+<head>
+    <title>
+        Design Simple Calculator |
+        HTML CSS and JavaScript
+    </title>
+ 
+    <link rel="stylesheet" href="../css/calcu.css">
+    <script src="../js/calci.js"></script>
+</head>
+ 
+<body>
+    <h1>Simple Calculator</h1>
+ 
+    <table>
+        <tr>
+            <td colspan="4">
+                <input type="text" id="result" />
+            </td>
+        </tr>
+ 
+        <tr>
+ 
+            <!-- Create calculator buttons and 
+                display the corresponding value -->
+            <td><input type="button" value="7" onclick="Display('7')" /> </td>
+            <td><input type="button" value="8" onclick="Display('8')" /> </td>
+            <td><input type="button" value="9" onclick="Display('9')" /> </td>
+            <td><input type="button" value="+" onclick="Display('+')" /> </td>
+        </tr>
+ 
+        <tr>
+            <td><input type="button" value="4" onclick="Display('4')" /> </td>
+            <td><input type="button" value="5" onclick="Display('5')" /> </td>
+            <td><input type="button" value="6" onclick="Display('6')" /> </td>
+            <td><input type="button" value="-" onclick="Display('-')" /> </td>
+        </tr>
+ 
+        <tr>
+            <td><input type="button" value="1" onclick="Display('1')" /> </td>
+            <td><input type="button" value="2" onclick="Display('2')" /> </td>
+            <td><input type="button" value="3" onclick="Display('3')" /> </td>
+            <td><input type="button" value="*" onclick="Display('*')" /> </td>
+        </tr>
+ 
+        <tr>
+            <td><input type="button" value="." onclick="Display('.')" /> </td>
+            <td><input type="button" value="0" onclick="Display('0')" /> </td>
+            <td><input type="button" value="%" onclick="Display('%')" /> </td>
+            <td><input type="button" value="/" onclick="Display('/')" /> </td>
+        </tr>
+ 
+        <tr>
+            <td><input type="button" value="C" onclick="clr()" /> </td>
+            <td><input type="button" value="&#10060;" 
+                style='font-size:15px;' onclick="cancel()" /> </td>
+            <td colspan="2"><input type="button" 
+                value="=" onclick="calculate()" /> </td>
+        </tr>
+    </table>
+ 
+</body>
+ 
+</html>
